@@ -1,6 +1,11 @@
+## 从现有安装中迁移到 DeepSeek
+
+> https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/claude_code
+
+```JSON
+// ~/.claude/settings.json 放这里安全
+//$env:ANTHROPIC_AUTH_TOKEN="<你的 DeepSeek API Key>"
 {
-  //$env:ANTHROPIC_AUTH_TOKEN="<你的 DeepSeek API Key>"
-  // ~/.cladue/settings.json
   "env": {
     "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
     "ANTHROPIC_AUTH_TOKEN": "<你的 DeepSeek API Key>",
@@ -12,3 +17,5 @@
     "CLAUDE_CODE_EFFORT_LEVEL": "max"
   }
 }
+
+```
