@@ -1,0 +1,114 @@
+// ~/.claude/settings.json %USERPROFILE%\.claude\settings.json
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json", // 这个 JSON 文件应该按照 Claude Code 的 settings.json 规则来检查。
+
+  "permissions": {
+    "allow": [
+      "Read(*)",
+      "Edit(*)",
+
+      "Bash(git status)",
+      "Bash(git diff)",
+      "Bash(git diff *)",
+      "Bash(git log)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git branch)",
+      "Bash(git branch *)",
+      "Bash(git checkout *)",
+      "Bash(git switch *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+
+      "Bash(mvn test)",
+      "Bash(mvn test *)",
+      "Bash(mvn compile)",
+      "Bash(mvn compile *)",
+      "Bash(mvn package)",
+      "Bash(mvn package *)",
+      "Bash(mvn clean)",
+      "Bash(mvn clean *)",
+
+      "Bash(gradle test)",
+      "Bash(gradle test *)",
+      "Bash(gradlew test)",
+      "Bash(gradlew test *)",
+      "Bash(gradle build)",
+      "Bash(gradle build *)",
+      "Bash(gradlew build)",
+      "Bash(gradlew build *)",
+
+      "Bash(npm test)",
+      "Bash(npm test *)",
+      "Bash(npm run *)",
+
+      "Bash(python *)",
+      "Bash(pytest *)",
+
+      "Bash(java *)",
+      "Bash(javac *)",
+
+      "Bash(pwd)",
+      "Bash(ls)",
+      "Bash(dir)",
+      "Bash(find *)",
+      "Bash(where *)",
+      "Bash(which *)"
+    ],
+
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git merge *)",
+      "Bash(git rebase *)",
+      "Bash(git reset *)",
+      "Bash(git revert *)",
+      "Bash(git clean *)",
+
+      "Bash(rm *)",
+      "Bash(del *)",
+      "Bash(rmdir *)",
+
+      "Bash(npm install *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+
+      "Bash(docker *)",
+      "Bash(kubectl *)"
+    ],
+
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+
+      "Read(**/.ssh/**)",
+      "Read(**/.aws/**)",
+      "Read(**/.kube/**)",
+      "Read(**/.docker/**)",
+
+      "Read(**/*.pem)",
+      "Read(**/*.key)",
+      "Read(**/*password*)",
+      "Read(**/*secret*)",
+      "Read(**/*credential*)",
+
+      "Bash(sudo *)",
+
+      "Bash(git push --force)",
+      "Bash(git push --force *)",
+      "Bash(git push -f)",
+      "Bash(git push -f *)",
+
+      "Bash(git reset --hard)",
+      "Bash(git reset --hard *)",
+
+      "Bash(rm -rf /)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -rf ~/*)"
+    ]
+  },
+
+  "alwaysThinkingEnabled": true //默认开启 Extended Thinking / Thinking Mode。
+}

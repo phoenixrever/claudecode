@@ -1,0 +1,6 @@
+// .claude/settings.json
+{
+  "permissions": {
+    "allow": ["Bash(mvn verify)", "Bash(mvn verify *)"]
+  }
+}
