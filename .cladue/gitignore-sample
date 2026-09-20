@@ -1,0 +1,65 @@
+# 请检查当前项目的目录结构、技术栈和构建方式，为这个项目生成一个合适的 `.gitignore`。
+
+# 要求：
+
+# * 不要忽略源码和项目必要的配置文件
+# * 忽略依赖、构建产物、缓存、日志、IDE 配置和操作系统生成的文件
+# * 忽略所有可能包含密钥、密码、Token 的本地配置
+# * 保留 `.env.example` 等示例配置
+# * 如果项目已经存在 `.gitignore`，先检查并在其基础上补充，不要无理由覆盖已有规则
+# * 最后说明新增了哪些规则以及原因
+
+# Claude / AI
+.claude/
+CLAUDE.local.md
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Build / cache
+dist/
+build/
+out/
+target/
+.cache/
+tmp/
+temp/
+
+# Dependencies
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Java
+*.class
+*.jar
+target/
+
+# Coverage
+coverage/
+htmlcov/
+
+# Local configuration
+*.local
+*.local.*
